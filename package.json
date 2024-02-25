@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@opengsn/contracts": "2.2.5"
+  }
+}
