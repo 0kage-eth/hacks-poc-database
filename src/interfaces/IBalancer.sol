@@ -6,3 +6,7 @@ import "./IERC20.sol";
 interface IBalancer {
     function flashLoan(IFlashLoanRecipient recipient, IERC20[] memory tokens, uint256[] memory amounts, bytes memory userData) external;
 }
+
+interface IBalancerVault {
+    function flashLoan(address recipient, address[] memory tokens, uint256[] memory amounts, bytes memory userData) external;    
+}

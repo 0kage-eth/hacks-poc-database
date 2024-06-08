@@ -67,6 +67,10 @@ interface ICheatCodes {
     function stopPrank() external;
     // Sets an address' balance, (who, newBalance)
     function deal(address, uint256) external;
+    
+    // Sets an address' balance, (token, who, newBalance)
+    function deal(address, address, uint256) external;
+
     // Sets an address' code, (who, newCode)
     function etch(address, bytes calldata) external;
     // Expects an error on next call

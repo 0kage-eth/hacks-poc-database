@@ -10,3 +10,12 @@ interface IFlashLoanRecipient {
         bytes memory userData
     ) external;
 }
+
+interface IFlashLoanRecipient2 {
+    function receiveFlashLoan(
+        address[] memory tokens,
+        uint256[] memory amounts,
+        uint256[] memory feeAmounts,
+        bytes memory userData
+    ) external;
+}
